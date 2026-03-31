@@ -62,6 +62,41 @@ const testimonials = [
   },
 ];
 
+const beforeAfterResults = [
+  {
+    title: 'Smile Transformation',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipMPgLCTmJ85ROfHr7G14AwEkjBfnAwZPd2Hfh4=s1360-w1360-h1020-rw',
+    description: 'A complete smile makeover showing the incredible results of our professional dental treatments.'
+  },
+  {
+    title: 'Orthodontic Correction',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipMtw4mTCPE9pBRLCg4kVJVpRFqcqaEaaHAZ0KI=s1360-w1360-h1020-rw',
+    description: 'Achieving perfect alignment and a healthier smile with our advanced orthodontic solutions.'
+  },
+  {
+    title: 'Teeth Whitening',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipM4xcqS5FRe1pBdEspr_sjUzq-SIoXH7ai7vbw=s1360-w1360-h1020-rw',
+    description: 'Brighten your smile with our professional whitening treatments for lasting, brilliant results.'
+  }
+];
+
+const doctors = [
+  {
+    name: 'Dr. Teoh Yeong Chee',
+    role: 'Principal Dentist',
+    specialty: 'Cosmetic & Restorative Dentistry',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipOa5u8XH6WX62eNGWpdWjA7NzGKGQU1-ZAB3to=s1360-w1360-h1020-rw',
+    bio: 'With over 12 years of experience, Dr. Teoh is passionate about creating beautiful, functional smiles and providing gentle care to our community.'
+  },
+  {
+    name: 'DSA Prettikha',
+    role: 'Dental Surgery Assistant',
+    specialty: 'Patient Care & Assistance',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipOadbve6IAHiPu4SucC65--JQjHzDdqT4xw5bU=s1360-w1360-h1020-rw',
+    bio: 'Prettikha is dedicated to ensuring every patient feels comfortable and supported during their dental procedures.'
+  }
+];
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -77,6 +112,8 @@ export default function App() {
   const navLinks = [
     { name: 'Services', href: '#services' },
     { name: 'About', href: '#about' },
+    { name: 'Results', href: '#results' },
+    { name: 'Team', href: '#doctors' },
     { name: 'Reviews', href: '#reviews' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -309,7 +346,7 @@ export default function App() {
               <div className="order-2 lg:order-1">
                 <div className="relative">
                   <img 
-                    src="https://picsum.photos/seed/dentist-team/800/1000" 
+                    src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoeleiEZikHVfVb_KyU_l7EL6Qgvb60UrwJQsgImwRjOL-sF13aOalgNK8Zs6mpu3wF2EqJblkQugiiXCuuizrLh0uo8t0lHXYPamP6Vr9-Uqp63QnmNPqLU79IqsR02dNqjmH8=s1360-w1360-h1020-rw" 
                     alt="Our Dental Team" 
                     className="rounded-3xl shadow-2xl"
                     referrerPolicy="no-referrer"
@@ -340,10 +377,93 @@ export default function App() {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-slate-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-800 transition-all">
-                  Meet Our Team
-                </button>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Before & After Section */}
+        <section id="results" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-dental-blue font-bold text-xs uppercase tracking-widest mb-4 block">Real Results</span>
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Transforming Smiles</h2>
+              <p className="text-slate-600">See the incredible transformations our patients have experienced. We take pride in delivering life-changing dental care.</p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {beforeAfterResults.map((result, index) => (
+                <motion.div
+                  key={result.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="relative rounded-3xl overflow-hidden shadow-xl mb-6 aspect-[4/3]">
+                    <div className="relative h-full overflow-hidden group-hover:scale-105 transition-transform duration-500">
+                      <img 
+                        src={result.image} 
+                        alt={result.title} 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute top-4 left-4 bg-dental-blue/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
+                        Before & After
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">{result.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {result.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Doctors Section */}
+        <section id="doctors" className="py-24 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-dental-blue font-bold text-xs uppercase tracking-widest mb-4 block">Our Team</span>
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Meet Our Team</h2>
+              <p className="text-slate-600">Our team of highly qualified dental professionals is dedicated to providing you with the best possible care in a comfortable environment.</p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-8">
+              {doctors.map((doctor, index) => (
+                <motion.div
+                  key={doctor.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group max-w-sm w-full"
+                >
+                  <div className="relative aspect-[3/4] overflow-hidden">
+                    <img 
+                      src={doctor.image} 
+                      alt={doctor.name} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                      <p className="text-white text-sm italic">"{doctor.bio}"</p>
+                    </div>
+                  </div>
+                  <div className="p-8">
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">{doctor.name}</h3>
+                    <p className="text-dental-blue font-semibold text-sm mb-3">{doctor.role}</p>
+                    <div className="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-wider font-bold">
+                      <div className="w-1.5 h-1.5 bg-mint-green rounded-full" />
+                      {doctor.specialty}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
