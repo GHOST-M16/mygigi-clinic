@@ -244,7 +244,7 @@ export default function App() {
               >
                 <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 aspect-[4/3] lg:aspect-square">
                   <img 
-                    src="/images/hero.jpg" 
+                    src="https://lh3.googleusercontent.com/p/AF1QipOrvtgXxYrdhH2SEiHzgJICSy2MHVbD_8HydDg=s1360-w1360-h1020-rw" 
                     alt="mygigi Dental Clinic" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
