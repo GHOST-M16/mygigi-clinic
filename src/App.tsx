@@ -92,7 +92,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/images/logo.jpg" 
+              src="https://instagram.fkul15-1.fna.fbcdn.net/v/t51.2885-19/328330215_1544759602668931_1529901021417422302_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fkul15-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gEr44pCx5UuL_0-5TZHjDGcnI34ra0BaZubgF4XL67hhknquAdbgCGjWnd5wa27FH4&_nc_ohc=GkwdeCYRkPMQ7kNvwEqSPwM&_nc_gid=bye8QuZ_uJbiUuqiU-5FMQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfyNQX_bVRhszAyfW6ld_r0psF54T-svSHaaHvVTClL78Q&oe=69D1AA4C&_nc_sid=7a9f4b" 
               alt="mygigi logo" 
               className="h-12 w-auto" 
               referrerPolicy="no-referrer" 
@@ -513,7 +513,7 @@ export default function App() {
             <div className="col-span-1 lg:col-span-1">
               <div className="flex items-center mb-6">
                 <img 
-                  src="/images/logo.jpg" 
+                  src="https://instagram.fkul15-1.fna.fbcdn.net/v/t51.2885-19/328330215_1544759602668931_1529901021417422302_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fkul15-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gEr44pCx5UuL_0-5TZHjDGcnI34ra0BaZubgF4XL67hhknquAdbgCGjWnd5wa27FH4&_nc_ohc=GkwdeCYRkPMQ7kNvwEqSPwM&_nc_gid=bye8QuZ_uJbiUuqiU-5FMQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfyNQX_bVRhszAyfW6ld_r0psF54T-svSHaaHvVTClL78Q&oe=69D1AA4C&_nc_sid=7a9f4b" 
                   alt="mygigi logo" 
                   className="h-10 w-auto" 
                   referrerPolicy="no-referrer" 
