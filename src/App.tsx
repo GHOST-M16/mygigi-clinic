@@ -92,7 +92,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/images/mygigi logo.jpeg" 
+              src="/images/mygigi-logo.jpeg" 
               alt="mygigi logo" 
               className="h-12 w-auto" 
               referrerPolicy="no-referrer" 
@@ -244,7 +244,7 @@ export default function App() {
               >
                 <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 aspect-[4/3] lg:aspect-square">
                   <img 
-                    src="/images/mygigi hero photo.jpeg" 
+                    src="/images/mygigi-hero-photo.jpeg" 
                     alt="mygigi Dental Clinic" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -513,7 +513,7 @@ export default function App() {
             <div className="col-span-1 lg:col-span-1">
               <div className="flex items-center mb-6">
                 <img 
-                  src="/images/mygigi logo.jpeg" 
+                  src="/images/mygigi-logo.jpeg" 
                   alt="mygigi logo" 
                   className="h-10 w-auto" 
                   referrerPolicy="no-referrer" 
